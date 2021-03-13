@@ -20,16 +20,15 @@ Is very important to note that this does not follow the recomendations found at 
 
 The Cuda Toolkit version that corresponds with tensorflow 1.13.1 is 10.1.105_418.96. It can be downloaded from: https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal .
 
+## CuDNN - 7.5.0.56
+
+The CuDNN library 
 
 ### Tensorflow 1.13.1
 
-The cuda Toolkit Version that works with tensorflow 1.13.1 can be downloaded from the following link.
+Tensorflow library can not be installed directly from pip or conda. A pre-built tensorflow wheel specifiaclly for graphic cards with 3.0 compute capability is required. The wheel file of this version can be found in: https://github.com/fo40225/tensorflow-windows-wheel/blob/master/1.13.1/py37/GPU/cuda101cudnn75avx2/tensorflow_gpu-1.13.1-cp37-cp37m-win_amd64.7z.001  (NOTE: If this link is not found any more a copy of the wheel file has been saved in the external hard-drive.)
 
-https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal
-
-## CuDNN
-
-The CuDNN library 
+Is important to take into consideration that the CPU must suport AVX2. Intel core I7-4700HQ supports AVX2.
 
 
 ## Tensor-Flow Version Compatibility Table
