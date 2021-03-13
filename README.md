@@ -56,6 +56,20 @@ Tensorflow library can not be installed directly from pip or conda. A pre-built 
 
 Is important to take into consideration that the CPU must suport AVX2. Intel core I7-4700HQ supports AVX2.
 
+## Install Tensorflow
+
+### Create new environment
+
+conda create -n tensorflow-gpu python=3.7
+
+### Install the library
+
+navigate to the directory containing teh whell file.
+
+conda activate tensorflow-gpu
+
+pip install --ignore-installed --upgrade tensorflow_gpu-1.13.1-cp37-cp37m-win_amd64.whl
+
 ## Testing Tensorflow
 
 import tensorflow as tf
