@@ -50,7 +50,7 @@ If a different version of CuDNN is required it can be found at NVIDIA CuDNN Arch
 
 https://developer.nvidia.com/rdp/cudnn-archive
 
-### Tensorflow 1.13.1
+## Tensorflow 1.13.1 - Pre-built wheel file
 
 Tensorflow library can not be installed directly from pip or conda. A pre-built tensorflow wheel specifiaclly for graphic cards with 3.0 compute capability is required. The wheel file of this version can be found in: https://github.com/fo40225/tensorflow-windows-wheel/blob/master/1.13.1/py37/GPU/cuda101cudnn75avx2/tensorflow_gpu-1.13.1-cp37-cp37m-win_amd64.7z.001  (NOTE: If this link is not found any more a copy of the wheel file has been saved in the external hard-drive.)
 
