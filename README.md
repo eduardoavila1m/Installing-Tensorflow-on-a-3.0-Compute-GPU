@@ -18,11 +18,19 @@ https://github.com/fo40225/tensorflow-windows-wheel
 
 Is very important to note that this does not follow the recomendations found at the Tensorflow official website. So, do not install anything in advanced before reviewing the specific versions.
 
-The Cuda Toolkit version that corresponds with tensorflow 1.13.1 is 10.1.105_418.96. It can be downloaded from: https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal .
+The Cuda Toolkit version that corresponds with tensorflow 1.13.1 is CUDA Toolkit 10.1 released on (Feb 2019), version 10.1.105_418.96. It can be downloaded from: https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal .
+
+If a different version s required, the specific version can be found on NVIDIA CUDA Toolkin Archive. 
+
+https://developer.nvidia.com/cuda-toolkit-archive
 
 ## CuDNN - 7.5.0.56
 
-The CuDNN library 
+The CuDNN library that works with this precompiled version of tensorflow is also very specific. Download cuDNN v7.5.0 released on (Feb 25, 2019), for CUDA 10.1 at the following link: https://developer.nvidia.com/rdp/cudnn-archive#a-collapse751-101.
+
+If a different version of CuDNN is required it can be found at NVIDIA CuDNN Archive.
+
+https://developer.nvidia.com/rdp/cudnn-archive
 
 ### Tensorflow 1.13.1
 
@@ -30,8 +38,17 @@ Tensorflow library can not be installed directly from pip or conda. A pre-built 
 
 Is important to take into consideration that the CPU must suport AVX2. Intel core I7-4700HQ supports AVX2.
 
-
 ## Tensor-Flow Version Compatibility Table
 
 https://www.tensorflow.org/install/source_windows#gpu
+
+## Testing Tensorflow
+
+
+
+## References
+
+https://shawnhymel.com/1961/how-to-install-tensorflow-with-gpu-support-on-windows/
+
+https://medium.com/@naarkie/using-tensorflow-gpu-on-a-compute-3-0-graphics-card-in-windows-4184f4228fe9
 
