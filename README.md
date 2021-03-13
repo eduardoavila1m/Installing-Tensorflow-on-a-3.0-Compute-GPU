@@ -8,7 +8,25 @@ Intel Core I7-4700HQ
 
 ## NVIDIA Drivers
 
-This step is crucial to get Tensorflow working on GPU other whise the Libraries wont compile. Each GPU has its own driver. 
+This step is crucial to get Tensorflow working on GPU other whise the Libraries wont compile. Each GPU has its own driver.
+
+Navigate to the following web site
+
+https://www.nvidia.com/en-gb/geforce/drivers/
+
+Select the parameters of the specific graphics card. For GeForce GTX 770M the following parameters are the following.
+
+Product Type: GeForce
+
+Product Series: GeForce 700M Series (Notebook)
+
+Product: GeForce GTX 770M
+
+Operating System: Windows 10 64-bit
+
+Download Type: Game Ready Driver
+
+Dwonload Driver Version: 425.31 - Release Date (2019 April 11)
 
 ## CUDA Toolkit - 10.1.105_418.96
 
