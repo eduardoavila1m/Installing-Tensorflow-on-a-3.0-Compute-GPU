@@ -38,10 +38,6 @@ Tensorflow library can not be installed directly from pip or conda. A pre-built 
 
 Is important to take into consideration that the CPU must suport AVX2. Intel core I7-4700HQ supports AVX2.
 
-## Tensor-Flow Version Compatibility Table
-
-https://www.tensorflow.org/install/source_windows#gpu
-
 ## Testing Tensorflow
 
 import tensorflow as tf
@@ -52,9 +48,15 @@ device_lib.list_local_devices()
 
 ## For GPUs with 3.5 Compute Capability or Higher
 
+### Pre Build Tensorflow Wheel Files
+
 Specific official prebuild wheel files for pip install can be found in the following table at link:
 
 https://www.tensorflow.org/install/pip#package-location
+
+### Tensor-Flow Version Compatibility Table
+
+https://www.tensorflow.org/install/source_windows#gpu
 
 ## References
 
