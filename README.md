@@ -66,6 +66,8 @@ Open Control Panel > System and Security > System > Advanced System Settings.
 
 Click Environment Variables at the bottom of the window.
 
+![image](https://user-images.githubusercontent.com/38021152/111084046-7be88280-8508-11eb-8006-0a6b606b1e9f.png)
+
 In the new window and in the System variables pane, select the Path variable and click Edit in the System variables pane.
 
 ![image](https://user-images.githubusercontent.com/38021152/111083959-2d3ae880-8508-11eb-9d62-3101a460ddfd.png)
