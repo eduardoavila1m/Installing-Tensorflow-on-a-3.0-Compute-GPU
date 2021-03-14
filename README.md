@@ -94,27 +94,43 @@ Is important to take into consideration that the CPU must suport AVX2. Intel cor
 
 ### Create new environment
 
-conda create -n tensorflow-gpu python=3.7
+Utilize the following command in a cmd window. This creates an anaconda environment with a specific python version that is compatible with tensorflow as shown in the compatibility table from Tensorflow web site.
+
+    conda create -n tensorflow-gpu python=3.7
 
 ### Install the library
 
-navigate to the directory containing teh whell file.
+Navigate to the directory containing the whell file.
 
-conda activate tensorflow-gpu
+Activate the new environment created in the previous step.
 
-pip install --ignore-installed --upgrade tensorflow_gpu-1.13.1-cp37-cp37m-win_amd64.whl
+    conda activate tensorflow-gpu
+   
+Install the tensorflow version with the wheel file just downloaded.
+
+    pip install --ignore-installed --upgrade tensorflow_gpu-1.13.1-cp37-cp37m-win_amd64.whl
 
 ## Testing Tensorflow
 
-import tensorflow as tf
+To test tensorflow activate the new environment created.
 
-from tensorflow.python.client import device_lib
+    conda activate tensorflow-gpu
 
-print (tf.__version__)
+Open the Python api.
 
-print(tf.test.is_built_with_cuda())
+    python
 
-device_lib.list_local_devices()
+Run the following commands.
+
+    import tensorflow as tf
+
+    from tensorflow.python.client import device_lib
+
+    print (tf.__version__)
+
+    print(tf.test.is_built_with_cuda())
+
+    device_lib.list_local_devices()
 
 ## For GPUs with 3.5 Compute Capability or Higher
 
