@@ -44,11 +44,43 @@ https://developer.nvidia.com/cuda-toolkit-archive
 
 ## CuDNN - 7.5.0.56
 
+### Download CuDNN
+
 The CuDNN library that works with this precompiled version of tensorflow is also very specific. Download cuDNN v7.5.0 released on (Feb 25, 2019), for CUDA 10.1 at the following link: https://developer.nvidia.com/rdp/cudnn-archive#a-collapse751-101.
 
 If a different version of CuDNN is required it can be found at NVIDIA CuDNN Archive.
 
 https://developer.nvidia.com/rdp/cudnn-archive
+
+### install Library *.dll files 
+
+Copy <cuDNN directory>\cuda\bin\*.dll to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vxx.x\bin
+  
+Copy <cuDNN directory>\cuda\include\*.h to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vxx.x\include
+  
+Copy <cuDNN directory>\cuda\lib\x64\*.lib to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vxx.x\lib\x64
+  
+### Update environmental variables
+  
+Open Control Panel > System and Security > System > Advanced System Settings.
+
+Click Environment Variables at the bottom of the window.
+
+In the new window and in the System variables pane, select the Path variable and click Edit in the System variables pane.
+
+![image](https://user-images.githubusercontent.com/38021152/111083959-2d3ae880-8508-11eb-9d62-3101a460ddfd.png)
+
+You should see two CUDA entries already listed
+
+![image](https://user-images.githubusercontent.com/38021152/111083973-4479d600-8508-11eb-804c-051de0b234b9.png)
+
+If you do not see these listed, add the following directories to this Path list (where vxx.x is your CUDA version number):
+
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vxx.x\bin
+    C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\vxx.x\libnvvp
+
+Click OK on the three pop-up windows to close out of the System Properties.
+
 
 ## Tensorflow 1.13.1 - Pre-built wheel file
 
